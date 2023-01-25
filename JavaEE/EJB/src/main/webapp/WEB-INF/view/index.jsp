@@ -17,19 +17,29 @@
         <li>Название книги: <c:out value="${book.title}"/></li>
 
         <li>Автор книги: <c:out value="${book.author}"/></li>
+
+        <form method="post" action="<c:url value='/delete'/>">
+            <input type="number" hidden name="id" value="${book.id}" />
+            <input type="submit" name="delete" value="Удалить"/>
+        </form>
+
+        <form method="get" action="<c:url value='/update'/>">
+            <input type="number" hidden name="id" value="${book.id}" />
+            <input type="submit" value="Редактированть"/>
+        </form>
     </ul>
     <hr />
 
 </c:forEach>
 
-<h2>Добавление новой книги</h2><br />
+<h2>Добавление книги</h2><br />
 
-<form method="post" action="">
+<form method="post" action="<c:url value='/add_book'/>">
 
     <label><input type="text" name="title"></label>Название книги<br>
 
     <label><input type="text" name="author"></label>Автор книги<br>
-<!--     <label><input type="number" name="author"></label>Возраст<br> -->
+<!--     <label><input type="number" name="age"></label>Возраст<br> -->
 
     <input type="submit" value="Ok" name="Ok"><br>
 </form>
