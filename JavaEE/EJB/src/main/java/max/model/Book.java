@@ -1,5 +1,8 @@
 package max.model;
 
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+@JsonPropertyOrder({ "id", "title", "author"})
 public class Book {
 
 	private int id;
