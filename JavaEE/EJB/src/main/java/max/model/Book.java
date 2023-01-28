@@ -1,5 +1,8 @@
 package max.model;
 
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+@JsonPropertyOrder({ "id", "title", "author"})
 public class Book {
 
 	private int id;
@@ -8,7 +11,7 @@ public class Book {
 	
 	public Book() {}
 
-	public Book(int id, String title, String author) {
+	public Book(int id , String title, String author) {
 		this.title = title;
 		this.author = author;
 	}
