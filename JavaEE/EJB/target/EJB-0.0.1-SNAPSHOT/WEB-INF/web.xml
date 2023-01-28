@@ -14,8 +14,7 @@
         <url-pattern>/</url-pattern>
     </servlet-mapping> -->
     
-
-    <!--Encoding filter UTF-8 for all requests-->
+        <!-- Encoding filter UTF-8 for all requests -->
     <filter>
         <filter-name>EncodingRequestFilter</filter-name>
         <filter-class>max.servlet.filter.EncodingRequestFilter</filter-class>
@@ -23,11 +22,11 @@
 
     <filter-mapping>
         <filter-name>EncodingRequestFilter</filter-name>
-        <url-pattern>/filter</url-pattern>
+        <url-pattern>/</url-pattern>
     </filter-mapping>
 
 
-    <!--Encoding filter UTF-8 for all requests-->
+    <!-- Encoding filter UTF-8 for all requests -->
     <filter>
         <filter-name>EncodingResponseFilter</filter-name>
         <filter-class>max.servlet.filter.EncodingResponseFilter</filter-class>
@@ -35,6 +34,6 @@
 
     <filter-mapping>
         <filter-name>EncodingResponseFilter</filter-name>
-        <url-pattern>/filter</url-pattern>
+        <url-pattern>/</url-pattern>
     </filter-mapping>
 </web-app>
