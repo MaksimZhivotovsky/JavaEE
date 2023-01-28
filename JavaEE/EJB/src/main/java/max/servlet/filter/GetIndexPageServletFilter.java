@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebServlet(value = "/filter")
-public class GetIndexPageServlet extends HttpServlet {
+public class GetIndexPageServletFilter extends HttpServlet {
 
     private static String filter = "/WEB-INF/view/filter.jsp";
 
