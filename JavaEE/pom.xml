@@ -15,5 +15,6 @@
   
   <modules>
   	<module>EJB</module>
+  	<module>MySqlCRUDHiberhate</module>
   </modules>
 </project>
