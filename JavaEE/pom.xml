@@ -7,5 +7,6 @@
 
   <modules>
   	<module>MySqlCRUDHiberhate</module>
+  	<module>EJB</module>
   </modules>
 </project>
