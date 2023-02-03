@@ -16,5 +16,6 @@
   <modules>
   	<module>EJB</module>
   	<module>MySqlCRUDHiberhate</module>
+  	<module>LibraryStore</module>
   </modules>
 </project>
