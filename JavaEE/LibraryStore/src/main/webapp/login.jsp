@@ -1,5 +1,5 @@
-<%-- <%@page import="cn.techtutorial.model.*"%>
-<%@page import="java.util.*"%>
+<%@page import="max.model.*"%>
+<%-- <%@page import="java.util.*"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 	<%
@@ -12,6 +12,13 @@
 		request.setAttribute("cart_list", cart_list);
 	}
 	%> --%>
+
+<%
+User auth = (User) request.getSession().getAttribute("auth");
+if (auth != null) {
+	response.sendRedirect("index.jsp");
+}
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,12 +34,12 @@
 			<div class="card-body">
 				<form action="login" method="post">
 					<div class="form-group">
-						<label>Email address</label> 
-						<input type="email" name="login-email" class="form-control" placeholder="Enter email">
+						<label>Email address</label> <input type="email"
+							name="login-email" class="form-control" placeholder="Enter email">
 					</div>
 					<div class="form-group">
-						<label>Password</label> 
-						<input type="password" name="login-password" class="form-control" placeholder="Password">
+						<label>Password</label> <input type="password"
+							name="login-password" class="form-control" placeholder="Password">
 					</div>
 					<div class="text-center">
 						<button type="submit" class="btn btn-primary">Login</button>

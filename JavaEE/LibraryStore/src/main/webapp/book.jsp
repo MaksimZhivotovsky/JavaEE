@@ -1,7 +1,17 @@
 <%@page import="max.connection.DbCon"%>
-<%@page import="org.hibernate.dialect.DB2390Dialect"%>
+<%-- <%@page import="max.dao.ProductDao"%> --%>
+<%@page import="max.model.*"%>
+<%@page import="java.util.*"%>
+<%@page import="java.text.DecimalFormat"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+	
+		<%
+	User auth = (User) request.getSession().getAttribute("auth");
+	if(auth != null) {
+		request.setAttribute("auth", auth);
+	}
+	%>
 
 <!DOCTYPE html>
 <html>

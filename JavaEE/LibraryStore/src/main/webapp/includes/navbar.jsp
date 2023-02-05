@@ -1,3 +1,4 @@
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
 	<div class="container">
 		<a class="navbar-brand" href="index.jsp">Library Market</a>
@@ -12,18 +13,18 @@
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item"><a class="nav-link" href="index.jsp">Home</a></li>
 				<li class="nav-item"><a class="nav-link" href="book.jsp">Books</a></li>
-<%-- 				<%
+				<%
 				if (auth != null) {
-				%> --%>
+				%>
 				<li class="nav-item"><a class="nav-link" href="orders.jsp">Orders</a></li>
 				<li class="nav-item"><a class="nav-link" href="log-out">Logout</a></li>
-<%-- 				<%
+				<%
 				} else {
-				%> --%>
+				%>
 				<li class="nav-item"><a class="nav-link" href="login.jsp">Login</a></li>
-<%-- 				<%
+				<%
 				}
-				%> --%>
+				%>
 			</ul>
 		</div>
 	</div>

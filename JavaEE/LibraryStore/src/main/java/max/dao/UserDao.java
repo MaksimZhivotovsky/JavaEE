@@ -5,7 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import max.User;
+import max.model.User;
 
 public class UserDao {
 	private Connection con;

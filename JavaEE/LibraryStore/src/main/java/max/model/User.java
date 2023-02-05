@@ -1,4 +1,4 @@
-package max;
+package max.model;
 
 public class User {
 	private int id;

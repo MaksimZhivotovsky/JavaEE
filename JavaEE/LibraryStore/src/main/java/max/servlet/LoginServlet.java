@@ -10,9 +10,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import max.User;
 import max.connection.DbCon;
 import max.dao.UserDao;
+import max.model.User;
 
 @WebServlet("/login")
 public class LoginServlet extends HttpServlet {
